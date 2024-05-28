@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		163DDE5F2C05E15F003F38D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163DDE5E2C05E15F003F38D0 /* AppDelegate.swift */; };
+		163DDE612C05E15F003F38D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163DDE602C05E15F003F38D0 /* SceneDelegate.swift */; };
+		163DDE632C05E15F003F38D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163DDE622C05E15F003F38D0 /* ViewController.swift */; };
+		163DDE662C05E15F003F38D0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 163DDE652C05E15F003F38D0 /* Base */; };
+		163DDE682C05E160003F38D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163DDE672C05E160003F38D0 /* Assets.xcassets */; };
+		163DDE6B2C05E160003F38D0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 163DDE6A2C05E160003F38D0 /* Base */; };
+		163DDE762C05E160003F38D0 /* VeroTaskAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163DDE752C05E160003F38D0 /* VeroTaskAppTests.swift */; };
+		163DDE802C05E160003F38D0 /* VeroTaskAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163DDE7F2C05E160003F38D0 /* VeroTaskAppUITests.swift */; };
+		163DDE822C05E160003F38D0 /* VeroTaskAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163DDE812C05E160003F38D0 /* VeroTaskAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		163DDE722C05E160003F38D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 163DDE532C05E15F003F38D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 163DDE5A2C05E15F003F38D0;
+			remoteInfo = VeroTaskApp;
+		};
+		163DDE7C2C05E160003F38D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 163DDE532C05E15F003F38D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 163DDE5A2C05E15F003F38D0;
+			remoteInfo = VeroTaskApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		163DDE5B2C05E15F003F38D0 /* VeroTaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeroTaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		163DDE5E2C05E15F003F38D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		163DDE602C05E15F003F38D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		163DDE622C05E15F003F38D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		163DDE652C05E15F003F38D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		163DDE672C05E160003F38D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		163DDE6A2C05E160003F38D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		163DDE6C2C05E160003F38D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		163DDE712C05E160003F38D0 /* VeroTaskAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeroTaskAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		163DDE752C05E160003F38D0 /* VeroTaskAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeroTaskAppTests.swift; sourceTree = "<group>"; };
+		163DDE7B2C05E160003F38D0 /* VeroTaskAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeroTaskAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		163DDE7F2C05E160003F38D0 /* VeroTaskAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeroTaskAppUITests.swift; sourceTree = "<group>"; };
+		163DDE812C05E160003F38D0 /* VeroTaskAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeroTaskAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		163DDE582C05E15F003F38D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		163DDE6E2C05E160003F38D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		163DDE782C05E160003F38D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		163DDE522C05E15F003F38D0 = {
+			isa = PBXGroup;
+			children = (
+				163DDE5D2C05E15F003F38D0 /* VeroTaskApp */,
+				163DDE742C05E160003F38D0 /* VeroTaskAppTests */,
+				163DDE7E2C05E160003F38D0 /* VeroTaskAppUITests */,
+				163DDE5C2C05E15F003F38D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		163DDE5C2C05E15F003F38D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				163DDE5B2C05E15F003F38D0 /* VeroTaskApp.app */,
+				163DDE712C05E160003F38D0 /* VeroTaskAppTests.xctest */,
+				163DDE7B2C05E160003F38D0 /* VeroTaskAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		163DDE5D2C05E15F003F38D0 /* VeroTaskApp */ = {
+			isa = PBXGroup;
+			children = (
+				163DDE5E2C05E15F003F38D0 /* AppDelegate.swift */,
+				163DDE602C05E15F003F38D0 /* SceneDelegate.swift */,
+				163DDE622C05E15F003F38D0 /* ViewController.swift */,
+				163DDE642C05E15F003F38D0 /* Main.storyboard */,
+				163DDE672C05E160003F38D0 /* Assets.xcassets */,
+				163DDE692C05E160003F38D0 /* LaunchScreen.storyboard */,
+				163DDE6C2C05E160003F38D0 /* Info.plist */,
+			);
+			path = VeroTaskApp;
+			sourceTree = "<group>";
+		};
+		163DDE742C05E160003F38D0 /* VeroTaskAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				163DDE752C05E160003F38D0 /* VeroTaskAppTests.swift */,
+			);
+			path = VeroTaskAppTests;
+			sourceTree = "<group>";
+		};
+		163DDE7E2C05E160003F38D0 /* VeroTaskAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				163DDE7F2C05E160003F38D0 /* VeroTaskAppUITests.swift */,
+				163DDE812C05E160003F38D0 /* VeroTaskAppUITestsLaunchTests.swift */,
+			);
+			path = VeroTaskAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		163DDE5A2C05E15F003F38D0 /* VeroTaskApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 163DDE852C05E160003F38D0 /* Build configuration list for PBXNativeTarget "VeroTaskApp" */;
+			buildPhases = (
+				163DDE572C05E15F003F38D0 /* Sources */,
+				163DDE582C05E15F003F38D0 /* Frameworks */,
+				163DDE592C05E15F003F38D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VeroTaskApp;
+			productName = VeroTaskApp;
+			productReference = 163DDE5B2C05E15F003F38D0 /* VeroTaskApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		163DDE702C05E160003F38D0 /* VeroTaskAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 163DDE882C05E160003F38D0 /* Build configuration list for PBXNativeTarget "VeroTaskAppTests" */;
+			buildPhases = (
+				163DDE6D2C05E160003F38D0 /* Sources */,
+				163DDE6E2C05E160003F38D0 /* Frameworks */,
+				163DDE6F2C05E160003F38D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				163DDE732C05E160003F38D0 /* PBXTargetDependency */,
+			);
+			name = VeroTaskAppTests;
+			productName = VeroTaskAppTests;
+			productReference = 163DDE712C05E160003F38D0 /* VeroTaskAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		163DDE7A2C05E160003F38D0 /* VeroTaskAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 163DDE8B2C05E160003F38D0 /* Build configuration list for PBXNativeTarget "VeroTaskAppUITests" */;
+			buildPhases = (
+				163DDE772C05E160003F38D0 /* Sources */,
+				163DDE782C05E160003F38D0 /* Frameworks */,
+				163DDE792C05E160003F38D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				163DDE7D2C05E160003F38D0 /* PBXTargetDependency */,
+			);
+			name = VeroTaskAppUITests;
+			productName = VeroTaskAppUITests;
+			productReference = 163DDE7B2C05E160003F38D0 /* VeroTaskAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		163DDE532C05E15F003F38D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					163DDE5A2C05E15F003F38D0 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					163DDE702C05E160003F38D0 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 163DDE5A2C05E15F003F38D0;
+					};
+					163DDE7A2C05E160003F38D0 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 163DDE5A2C05E15F003F38D0;
+					};
+				};
+			};
+			buildConfigurationList = 163DDE562C05E15F003F38D0 /* Build configuration list for PBXProject "VeroTaskApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 163DDE522C05E15F003F38D0;
+			productRefGroup = 163DDE5C2C05E15F003F38D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				163DDE5A2C05E15F003F38D0 /* VeroTaskApp */,
+				163DDE702C05E160003F38D0 /* VeroTaskAppTests */,
+				163DDE7A2C05E160003F38D0 /* VeroTaskAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		163DDE592C05E15F003F38D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				163DDE682C05E160003F38D0 /* Assets.xcassets in Resources */,
+				163DDE6B2C05E160003F38D0 /* Base in Resources */,
+				163DDE662C05E15F003F38D0 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		163DDE6F2C05E160003F38D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		163DDE792C05E160003F38D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		163DDE572C05E15F003F38D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				163DDE632C05E15F003F38D0 /* ViewController.swift in Sources */,
+				163DDE5F2C05E15F003F38D0 /* AppDelegate.swift in Sources */,
+				163DDE612C05E15F003F38D0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		163DDE6D2C05E160003F38D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				163DDE762C05E160003F38D0 /* VeroTaskAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		163DDE772C05E160003F38D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				163DDE802C05E160003F38D0 /* VeroTaskAppUITests.swift in Sources */,
+				163DDE822C05E160003F38D0 /* VeroTaskAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		163DDE732C05E160003F38D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 163DDE5A2C05E15F003F38D0 /* VeroTaskApp */;
+			targetProxy = 163DDE722C05E160003F38D0 /* PBXContainerItemProxy */;
+		};
+		163DDE7D2C05E160003F38D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 163DDE5A2C05E15F003F38D0 /* VeroTaskApp */;
+			targetProxy = 163DDE7C2C05E160003F38D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		163DDE642C05E15F003F38D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				163DDE652C05E15F003F38D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		163DDE692C05E160003F38D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				163DDE6A2C05E160003F38D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		163DDE832C05E160003F38D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		163DDE842C05E160003F38D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		163DDE862C05E160003F38D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VeroTaskApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iDeveloper.VeroTaskApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		163DDE872C05E160003F38D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VeroTaskApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iDeveloper.VeroTaskApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		163DDE892C05E160003F38D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iDeveloper.VeroTaskAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeroTaskApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VeroTaskApp";
+			};
+			name = Debug;
+		};
+		163DDE8A2C05E160003F38D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iDeveloper.VeroTaskAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeroTaskApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VeroTaskApp";
+			};
+			name = Release;
+		};
+		163DDE8C2C05E160003F38D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iDeveloper.VeroTaskAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VeroTaskApp;
+			};
+			name = Debug;
+		};
+		163DDE8D2C05E160003F38D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iDeveloper.VeroTaskAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VeroTaskApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		163DDE562C05E15F003F38D0 /* Build configuration list for PBXProject "VeroTaskApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163DDE832C05E160003F38D0 /* Debug */,
+				163DDE842C05E160003F38D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		163DDE852C05E160003F38D0 /* Build configuration list for PBXNativeTarget "VeroTaskApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163DDE862C05E160003F38D0 /* Debug */,
+				163DDE872C05E160003F38D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		163DDE882C05E160003F38D0 /* Build configuration list for PBXNativeTarget "VeroTaskAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163DDE892C05E160003F38D0 /* Debug */,
+				163DDE8A2C05E160003F38D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		163DDE8B2C05E160003F38D0 /* Build configuration list for PBXNativeTarget "VeroTaskAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163DDE8C2C05E160003F38D0 /* Debug */,
+				163DDE8D2C05E160003F38D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 163DDE532C05E15F003F38D0 /* Project object */;
+}
