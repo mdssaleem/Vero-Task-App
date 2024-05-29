@@ -66,3 +66,58 @@ extension UIView {
         self.layer.masksToBounds = false
     }
 }
+
+
+class ToastView: UIView {
+    
+    static func show(message: String, inView view: UIView) {
+        let toast = ToastView(message: message)
+        view.addSubview(toast)
+        
+        toast.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            toast.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            toast.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            toast.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50)
+        ])
+        
+        toast.alpha = 0.0
+        UIView.animate(withDuration: 0.5, animations: {
+            toast.alpha = 1.0
+            toast.applyShadow()
+        }) { _ in
+            UIView.animate(withDuration: 0.5, delay: 2.0, options: .curveEaseOut, animations: {
+                toast.alpha = 0.0
+            }) { _ in
+                toast.removeFromSuperview()
+            }
+        }
+    }
+    
+    private init(message: String) {
+        super.init(frame: .zero)
+        self.backgroundColor = UIColor.black.withAlphaComponent(1.8)
+        self.layer.cornerRadius = 10
+        
+        let label = UILabel()
+        label.text = message
+        label.textColor = .white
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.numberOfLines = 0
+        
+        self.addSubview(label)
+        
+        label.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            label.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+            label.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            label.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
+            label.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10)
+        ])
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}

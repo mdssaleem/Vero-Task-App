@@ -8,9 +8,6 @@
 import Foundation
 import SwiftyJSON
 
-
-
-
 class VeroModelClass {
     
        var task: String?

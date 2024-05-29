@@ -21,6 +21,9 @@
 		163DDE762C05E160003F38D0 /* VeroTaskAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163DDE752C05E160003F38D0 /* VeroTaskAppTests.swift */; };
 		163DDE802C05E160003F38D0 /* VeroTaskAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163DDE7F2C05E160003F38D0 /* VeroTaskAppUITests.swift */; };
 		163DDE822C05E160003F38D0 /* VeroTaskAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163DDE812C05E160003F38D0 /* VeroTaskAppUITestsLaunchTests.swift */; };
+		1665E4C92C072DD400D85924 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665E4C82C072DD400D85924 /* DatabaseManager.swift */; };
+		1665E4CB2C07414600D85924 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665E4CA2C07414600D85924 /* DBHelper.swift */; };
+		1665E4CD2C07446C00D85924 /* VeroModelClassOffline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665E4CC2C07446C00D85924 /* VeroModelClassOffline.swift */; };
 		166B79B42C05E5F50092BEAF /* NetWorkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166B79B32C05E5F50092BEAF /* NetWorkingConstants.swift */; };
 		166B79B62C05E7AF0092BEAF /* APIManagerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166B79B52C05E7AF0092BEAF /* APIManagerClass.swift */; };
 		68F898B7AD854A57547161CD /* Pods_VeroTaskAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C5423E19F4893CD6D7C4BE /* Pods_VeroTaskAppTests.framework */; };
@@ -64,6 +67,9 @@
 		163DDE7B2C05E160003F38D0 /* VeroTaskAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeroTaskAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		163DDE7F2C05E160003F38D0 /* VeroTaskAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeroTaskAppUITests.swift; sourceTree = "<group>"; };
 		163DDE812C05E160003F38D0 /* VeroTaskAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeroTaskAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1665E4C82C072DD400D85924 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		1665E4CA2C07414600D85924 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		1665E4CC2C07446C00D85924 /* VeroModelClassOffline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeroModelClassOffline.swift; sourceTree = "<group>"; };
 		166B79B32C05E5F50092BEAF /* NetWorkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkingConstants.swift; sourceTree = "<group>"; };
 		166B79B52C05E7AF0092BEAF /* APIManagerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerClass.swift; sourceTree = "<group>"; };
 		1F59B4D75F30C9F7863A65EB /* Pods-VeroTaskAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeroTaskAppTests.debug.xcconfig"; path = "Target Support Files/Pods-VeroTaskAppTests/Pods-VeroTaskAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +146,7 @@
 		163DDE5D2C05E15F003F38D0 /* VeroTaskApp */ = {
 			isa = PBXGroup;
 			children = (
+				1665E4C72C072DBF00D85924 /* DatabaseManager */,
 				16034DCB2C0603AC00BD804A /* ViewClasses */,
 				166B79B22C05E4980092BEAF /* AppExtensionClass */,
 				166B79B12C05E48E0092BEAF /* NetworkingClass */,
@@ -173,6 +180,15 @@
 			path = VeroTaskAppUITests;
 			sourceTree = "<group>";
 		};
+		1665E4C72C072DBF00D85924 /* DatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				1665E4C82C072DD400D85924 /* DatabaseManager.swift */,
+				1665E4CA2C07414600D85924 /* DBHelper.swift */,
+			);
+			path = DatabaseManager;
+			sourceTree = "<group>";
+		};
 		166B79AF2C05E4730092BEAF /* APIManagerClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				16034DC92C05E9BF00BD804A /* VeroModelClass.swift */,
+				1665E4CC2C07446C00D85924 /* VeroModelClassOffline.swift */,
 			);
 			path = ModelClass;
 			sourceTree = "<group>";
@@ -468,12 +485,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1665E4CB2C07414600D85924 /* DBHelper.swift in Sources */,
 				16034DD32C06427500BD804A /* DetailViewController.swift in Sources */,
 				163DDE632C05E15F003F38D0 /* ViewController.swift in Sources */,
+				1665E4C92C072DD400D85924 /* DatabaseManager.swift in Sources */,
 				166B79B42C05E5F50092BEAF /* NetWorkingConstants.swift in Sources */,
 				16034DCA2C05E9BF00BD804A /* VeroModelClass.swift in Sources */,
 				16034DCD2C0603DE00BD804A /* ExtensionClass.swift in Sources */,
 				16034DD02C06041800BD804A /* TaskCell.swift in Sources */,
+				1665E4CD2C07446C00D85924 /* VeroModelClassOffline.swift in Sources */,
 				163DDE5F2C05E15F003F38D0 /* AppDelegate.swift in Sources */,
 				163DDE612C05E15F003F38D0 /* SceneDelegate.swift in Sources */,
 				166B79B62C05E7AF0092BEAF /* APIManagerClass.swift in Sources */,
