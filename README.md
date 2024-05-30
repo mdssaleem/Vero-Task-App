@@ -1,75 +1,40 @@
-Hello dear iOS dev prospect!
+# iOS Application for Fetching and Displaying Tasks
+This iOS application connects to a remote API to download a set of resources, displays them in a list, and provides basic search and filter functionalities. Additionally, the app includes a QR code scanning feature and supports offline usage.
 
-This repository is supposed to act as a playground for your submission.
-Before getting started, please make sure to use this repository as a template on which you will commit and push your code regularly. Once you are ready, please mail us back the link to your repository. 
 
-Below, you will find the **Task** definition. Happy Hacking :computer: and Good Luck :shamrock:
+# Features
+- Fetch Resources: The app requests resources from the following endpoint: https://api.baubuddy.de/dev/index.php/v1/tasks/select.
+- Offline Storage: Resources are stored locally to allow the application to function offline.
+- List Display: All items are displayed in a list showing: Task, Title, Description
+- A color-coded view based on the colorCode property
+- Search Functionality: A search bar allows users to search for any property of the resources, even those not directly visible in the list.
+- QR Code Scanning: The app includes a menu item for scanning QR codes. Upon a successful scan, the scanned text is used as the search query.
+- Pull-to-Refresh: Users can refresh the data using pull-to-refresh functionality.
 
-# Task
+- ## Requirements
 
-Write a iOS application that connects to a remote API, downloads a certain set of resources, shows them in a list and provides some basic searching/filtering feature-set.
-In particular, the app should:
+- iOS 14.0+
+- Xcode 12.0+
+- Swift 5.3+
 
-- Request the resources located at `https://api.baubuddy.de/dev/index.php/v1/tasks/select` 
-- Store them in an appropriate data structure that allows using the application offline
-- Display all items in a list showing `task`, `title`, `description` and `colorCode` (which should be a view colored according to `colorCode`)
-- The app should offer a search bar that allows searching for any of the class properties (even those, that are not visible to the user directly)
-- The app should offer a menu item that allows scanning for QR-Codes
-  - Upon successful scan, the search query should be set to the scanned text
-- In order to refresh the data, the app should offer a pull-2-refresh functionality
-  
+## Installation
 
-### Authorization
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/yourusername/Vero-Task-App.git]
 
-It's mandatory for your requests towers the API to be authorized. You can find the required request below:
+## Media
 
-This is how it looks in `curl`:
+<img width="364" alt="Screenshot 2024-05-30 at 3 15 53 PM" src="https://github.com/mdssaleem/Vero-Task-App/assets/32189409/6cdf674e-6562-400c-b96c-086d6d5f2945">
+<img width="363" alt="Screenshot 2024-05-30 at 3 15 06 PM" src="https://github.com/mdssaleem/Vero-Task-App/assets/32189409/8526bd5e-6047-4072-aaec-cb2d18a1676a">
+<img width="371" alt="Screenshot 2024-05-30 at 3 13 40 PM" src="https://github.com/mdssaleem/Vero-Task-App/assets/32189409/f900b02f-b418-49d1-a6ed-90257fc0efb2">
 
-```bash
-curl --request POST \
-  --url https://api.baubuddy.de/index.php/login \
-  --header 'Authorization: Basic QVBJX0V4cGxvcmVyOjEyMzQ1NmlzQUxhbWVQYXNz' \
-  --header 'Content-Type: application/json' \
-  --data '{
-        "username":"365",
-        "password":"1"
-}'
-```
 
-The response will contain a json object, having the access token in `json["oauth"]["access_token"]`. For all subsequent calls this has to be added to the request headers as `Authorization: Bearer {access_token}`.
+## QR Codes For Testing
 
-A possible implementation in `Swift` could be the following. You don't have to copy over this one, feel free to indivualize it or use a different network library.
+<img width="262" alt="Plane" src="https://github.com/mdssaleem/Vero-Task-App/assets/32189409/ae03444c-657a-4620-a205-af3cab6c66a5">
+<img width="268" alt="40 Material" src="https://github.com/mdssaleem/Vero-Task-App/assets/32189409/dd60e37d-9257-4ffb-9fec-2cfe2f9cc3ab">
+<img width="269" alt="10 Aufbau" src="https://github.com/mdssaleem/Vero-Task-App/assets/32189409/80735ae7-753c-49c6-a69b-b7bb3831259c">
 
-```swift
-import Foundation
 
-let headers = [
-  "Authorization": "Basic QVBJX0V4cGxvcmVyOjEyMzQ1NmlzQUxhbWVQYXNz",
-  "Content-Type": "application/json"
-]
-let parameters = [
-  "username": "365",
-  "password": "1"
-] as [String : Any]
-
-let postData = JSONSerialization.data(withJSONObject: parameters, options: [])
-
-let request = NSMutableURLRequest(url: NSURL(string: "https://api.baubuddy.de/index.php/login")! as URL,
-                                        cachePolicy: .useProtocolCachePolicy,
-                                    timeoutInterval: 10.0)
-request.httpMethod = "POST"
-request.allHTTPHeaderFields = headers
-request.httpBody = postData as Data
-
-let session = URLSession.shared
-let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-  if (error != nil) {
-    print(error)
-  } else {
-    let httpResponse = response as? HTTPURLResponse
-    print(httpResponse)
-  }
-})
-
-dataTask.resume()
-```
+   
