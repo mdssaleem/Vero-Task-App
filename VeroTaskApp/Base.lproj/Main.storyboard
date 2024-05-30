@@ -38,6 +38,7 @@
                     <connections>
                         <outlet property="searchBar" destination="xGH-Be-7bh" id="3ge-G4-XU4"/>
                         <outlet property="tableView" destination="lhb-S9-3wj" id="fjS-1d-5TZ"/>
+                        <segue destination="P84-KP-iv0" kind="show" identifier="QRScannerViewController" id="Rpd-O5-uVb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -110,6 +111,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="guW-wW-z4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1791.6030534351144" y="3.5211267605633805"/>
+        </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="Sy8-u6-lsq">
+            <objects>
+                <viewController storyboardIdentifier="QRScannerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="P84-KP-iv0" customClass="QRScannerViewController" customModule="VeroTaskApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iei-fh-0Tj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UR1-9O-FV8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z2x-Ni-etk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PvQ-hO-rWy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1756" y="-318"/>
         </scene>
     </scenes>
     <resources>

@@ -10,19 +10,19 @@ import SwiftyJSON
 
 class VeroModelClass {
     
-       var task: String?
-       var title: String?
-       var description: String?
-       var sort: String?
-       var wageType: String?
-       var businessUnitKey: String?
-       var businessUnit: String?
-       var parentTaskID: String?
-       var preplanningBoardQuickSelect: String?
-       var colorCode: String?
-       var workingTime: String?
-       var isAvailableInTimeTrackingKioskMode: Bool?
-
+    var task: String?
+    var title: String?
+    var description: String?
+    var sort: String?
+    var wageType: String?
+    var businessUnitKey: String?
+    var businessUnit: String?
+    var parentTaskID: String?
+    var preplanningBoardQuickSelect: String?
+    var colorCode: String?
+    var workingTime: String?
+    var isAvailableInTimeTrackingKioskMode: Bool?
+    
     init(json: JSON) {
         self.task = json["task"].stringValue
         self.title = json["title"].stringValue

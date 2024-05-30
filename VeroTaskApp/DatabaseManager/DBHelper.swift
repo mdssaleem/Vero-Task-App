@@ -69,7 +69,7 @@ class DBHelper
             sqlite3_bind_text(insertStatement, 5, (task as NSString).utf8String, -1, nil)
 
             if sqlite3_step(insertStatement) == SQLITE_DONE {
-                print("Successfully inserted row.")
+                //print("Successfully inserted row.")
             } else {
                 print("Could not insert row.")
             }
@@ -108,7 +108,7 @@ class DBHelper
 
         if sqlite3_prepare_v2(db, deleteStatementString, -1, &deleteStatement, nil) == SQLITE_OK {
             if sqlite3_step(deleteStatement) == SQLITE_DONE {
-                print("Successfully deleted all rows.")
+                //print("Successfully deleted all rows.")
             } else {
                 print("Could not delete rows.")
             }

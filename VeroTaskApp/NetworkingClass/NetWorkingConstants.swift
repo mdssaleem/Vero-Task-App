@@ -16,11 +16,7 @@ struct NetWorkingConstants {
     
     static let username = "365"
     static let password = "1"
-  
-    
-    
-    
-    
+   
     
 }
 

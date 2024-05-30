@@ -9,9 +9,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class APIManagerClass{
-    
-    
+class APIManagerClass{    
     
     static func get_Token_Data(information: [String : Any], completion:@escaping (String?) -> Void){
         let headers: HTTPHeaders = [
@@ -55,7 +53,7 @@ class APIManagerClass{
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                print("JSON response: \(json)")
+                //print("JSON response: \(json)")
                 var jsonData = [VeroModelClass]()
                 for (_, subJson) in json {
                     let data = VeroModelClass(json: subJson)

@@ -10,9 +10,7 @@ import RappleProgressHUD
 import SQLite3
 import Alamofire
 
-
-
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate,searchTextDelegate {
     
     struct Connectivity {
         static let sharedInstance = NetworkReachabilityManager()!
@@ -54,45 +52,33 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             tableView.reloadData()
         }
         
-        
-        let searchButton = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(didTapSearchButton))
+        let searchButton = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(didTapScanButton))
         self.navigationItem.leftBarButtonItem = searchButton
         navigationController?.navigationBar.tintColor = UIColor.black
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-       
-        
-        
-    }
-    
-    @objc func didTapSearchButton() {
-        // Handle the search button tap
-        print("Search button tapped")
-        
-        // Example: Present a search bar or navigate to a search view controller
-        let detailView = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
-        self.navigationController?.pushViewController(detailView, animated: true)
+    @objc func didTapScanButton() {
+        let scannerViewController = QRScannerViewController()
+        scannerViewController.delegate = self
+        present(scannerViewController, animated: true)
     }
     
     @objc func refreshData() {
         // Simulate network request or data refresh
         
-            if Connectivity.isConnectedToInternet {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                    self.getAccessToken()
-                    self.refreshControl.endRefreshing()
-                }
-            }else{
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                    ToastView.show(message: "\nNo Internet connection!\n", inView: self.view)
-                    self.refreshControl.endRefreshing()
-                }
+        if Connectivity.isConnectedToInternet {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.getAccessToken()
+                self.refreshControl.endRefreshing()
             }
-            
+        }else{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                ToastView.show(message: "\nNo Internet connection!\n", inView: self.view)
+                self.refreshControl.endRefreshing()
+            }
+        }
+        
         
     }
     
@@ -185,17 +171,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 $0.task!.localizedCaseInsensitiveContains(searchText) }
             tableView.reloadData()
         }else{
-                self.offlineData = searchText.isEmpty ? self.task_JsonData_offline : self.task_JsonData_offline.filter { $0.nameString.localizedCaseInsensitiveContains(searchText) || $0.descriptionString.localizedCaseInsensitiveContains(searchText) ||
-                    $0.imgUrlString.localizedCaseInsensitiveContains(searchText) ||
-                    $0.taskString.localizedCaseInsensitiveContains(searchText) }
-                self.tableView.reloadData()
-                
-
-            
+            self.offlineData = searchText.isEmpty ? self.task_JsonData_offline : self.task_JsonData_offline.filter { $0.nameString.localizedCaseInsensitiveContains(searchText) || $0.descriptionString.localizedCaseInsensitiveContains(searchText) ||
+                $0.imgUrlString.localizedCaseInsensitiveContains(searchText) ||
+                $0.taskString.localizedCaseInsensitiveContains(searchText) }
+            self.tableView.reloadData()
         }
     }
     
-   
+    func setTextFromQRScanner(text: String) {
+        searchBar.text = text
+        searchBar(searchBar, textDidChange: searchBar.text ?? "")
+    }
+    
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
