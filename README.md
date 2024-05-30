@@ -1,5 +1,8 @@
 # iOS Application for Fetching and Displaying Tasks
+
 This iOS application connects to a remote API to download a set of resources, displays them in a list, and provides basic search and filter functionalities. Additionally, the app includes a QR code scanning feature and supports offline usage.
+
+
 
 
 # Features
@@ -11,7 +14,8 @@ This iOS application connects to a remote API to download a set of resources, di
 - QR Code Scanning: The app includes a menu item for scanning QR codes. Upon a successful scan, the scanned text is used as the search query.
 - Pull-to-Refresh: Users can refresh the data using pull-to-refresh functionality.
 
-- ## Requirements
+ 
+## Requirements
 
 - iOS 14.0+
 - Xcode 12.0+
@@ -23,11 +27,12 @@ This iOS application connects to a remote API to download a set of resources, di
    ```bash
    git clone [https://github.com/yourusername/Vero-Task-App.git]
 
+
 ## Media
 
+<img width="371" alt="Screenshot 2024-05-30 at 3 13 40 PM" src="https://github.com/mdssaleem/Vero-Task-App/assets/32189409/f900b02f-b418-49d1-a6ed-90257fc0efb2">
 <img width="364" alt="Screenshot 2024-05-30 at 3 15 53 PM" src="https://github.com/mdssaleem/Vero-Task-App/assets/32189409/6cdf674e-6562-400c-b96c-086d6d5f2945">
 <img width="363" alt="Screenshot 2024-05-30 at 3 15 06 PM" src="https://github.com/mdssaleem/Vero-Task-App/assets/32189409/8526bd5e-6047-4072-aaec-cb2d18a1676a">
-<img width="371" alt="Screenshot 2024-05-30 at 3 13 40 PM" src="https://github.com/mdssaleem/Vero-Task-App/assets/32189409/f900b02f-b418-49d1-a6ed-90257fc0efb2">
 
 
 ## QR Codes For Testing
